@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script src="../api.js"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary": "#ffffff", "secondary-container": "#6a91fe", "surface-variant": "#d1e4ff", "primary-fixed": "#89f2ff", "on-secondary-container": "#002873", "surface-container-low": "#eef4ff", "on-error-container": "#93000a", "secondary": "#2a57c2", "on-error": "#ffffff", "tertiary-fixed": "#75f7ef", "on-secondary-fixed-variant": "#003ea7", "primary": "#006971", "background": "#f8f9ff", "surface": "#f8f9ff", "surface-container-highest": "#d1e4ff", "surface-container": "#e5eeff", "error": "#ba1a1a", "on-tertiary-container": "#00504c", "surface-tint": "#006971", "outline-variant": "#bbc9cb", "surface-dim": "#c6dcfa", "secondary-fixed": "#dbe1ff", "inverse-on-surface": "#eaf1ff", "outline": "#6c7a7b", "on-surface": "#051d33", "primary-container": "#22c7d6", "on-secondary-fixed": "#00174a", "on-tertiary": "#ffffff", "on-primary-fixed-variant": "#004f56", "on-tertiary-fixed-variant": "#00504c", "tertiary-container": "#3ec8c1", "error-container": "#ffdad6", "tertiary": "#006a66", "on-tertiary-fixed": "#00201e", "on-primary-container": "#004e55", "surface-container-lowest": "#ffffff", "on-surface-variant": "#3c494b", "inverse-surface": "#1c3249", "surface-container-high": "#dbe9ff", "secondary-fixed-dim": "#b4c5ff", "inverse-primary": "#43d9e8", "on-primary-fixed": "#001f23", "on-primary": "#ffffff", "primary-fixed-dim": "#43d9e8", "surface-bright": "#f8f9ff", "tertiary-fixed-dim": "#55dad2", "on-background": "#051d33" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-md": "0.875rem", "space-lg": "1.25rem", "margin": "1rem", "space-2xl": "2.5rem", "space-xs": "0.25rem", "space-xl": "1.75rem", "gutter-desktop": "1.25rem", "margin-desktop": "1.5rem", "gutter": "1rem" }, "fontFamily": { "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-lg-mobile": ["Inter"], "title-sm": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"], "label-md": ["Inter"], "headline-xl-mobile": ["Inter"], "headline-xl": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"], "code-sm": ["Inter"] }, "fontSize": { "body-lg": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "0em", "fontWeight": "400" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.03em", "fontWeight": "500" }], "headline-lg-mobile": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-sm": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-md": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-xl-mobile": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-xl": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0em", "fontWeight": "400" }], "body-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.01em", "fontWeight": "400" }], "code-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "-0.01em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-[#17233F] border-b border-white/10 shadow-[0_16px_32px_-6px_rgba(17,24,39,0.40)]"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><button aria-label="Toggle Navigation Drawer" class="xl:hidden p-space-xs rounded text-surface-variant hover:text-on-primary transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary/20 flex items-center justify-center text-primary-container shadow-[0_0_12px_rgba(34,199,214,0.45)]"><span class="material-symbols-outlined text-[22px]">radar</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md font-bold tracking-tight text-white leading-none">NMVS</span><span class="font-label-sm text-label-sm tracking-wider uppercase text-primary-container/80">Enterprise Console</span></div></div><nav class="hidden xl:flex items-center gap-space-xs px-space-xs py-1 rounded-xl bg-[#131C33]" data-active-classes="bg-[#202D4B] text-primary-container ring-1 ring-primary-container/40 font-semibold"><a class="px-space-md py-1.5 rounded-lg text-surface-variant hover:text-white transition-all font-body-sm text-body-sm" data-path="dashboard" href="#">Dashboard</a><a class="px-space-md py-1.5 rounded-lg text-surface-variant hover:text-white transition-all font-body-sm text-body-sm" data-path="devices" href="#">Devices</a><a class="px-space-md py-1.5 rounded-lg text-surface-variant hover:text-white transition-all font-body-sm text-body-sm" data-path="monitoring" href="#">Monitoring</a><a class="px-space-md py-1.5 rounded-lg text-surface-variant hover:text-white transition-all font-body-sm text-body-sm" data-path="speed-monitoring" href="#">Speed Monitoring</a><a class="px-space-md py-1.5 rounded-lg text-surface-variant hover:text-white transition-all font-body-sm text-body-sm" data-path="topology" href="#">Topology</a><a class="px-space-md py-1.5 rounded-lg text-surface-variant hover:text-white transition-all font-body-sm text-body-sm" data-path="alerts" href="#">Alerts</a><a class="px-space-md py-1.5 rounded-lg text-surface-variant hover:text-white transition-all font-body-sm text-body-sm" data-path="reports" href="#">Reports</a><a class="px-space-md py-1.5 rounded-lg text-surface-variant hover:text-white transition-all font-body-sm text-body-sm" data-path="settings" href="#">Settings</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs px-space-md py-1 rounded-full bg-[#131C33] border border-white/10"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary-container shadow-[0_0_8px_rgba(62,200,193,0.8)]"></span></span><span class="font-code-sm text-code-sm font-medium text-surface-variant tracking-tight">API Connected :8000</span></div><button aria-label="Toggle Theme Mode" class="p-space-xs rounded-lg text-surface-variant hover:text-white hover:bg-white/5 transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">light_mode</span></button><div class="flex items-center gap-space-sm pl-space-xs border-l border-white/10"><div class="hidden md:flex flex-col text-right"><span class="font-title-sm text-title-sm text-white leading-tight">Alex Vance</span><span class="font-label-sm text-label-sm text-primary-container leading-none">Network Admin</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ring-2 ring-primary-container/30"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 bg-[#879CB8] min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Top Action & Status Bar -->
+<section class="w-full px-gutter-desktop py-space-md">
+<div class="w-full bg-surface-container-low/95 rounded-2xl shadow-[8px_12px_24px_-4px_rgba(32,45,75,0.18),-4px_-4px_12px_0px_rgba(255,255,255,0.7)] p-space-lg flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-lg">
+<!-- Breadcrumb & Title Area -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm tracking-wider uppercase">
+<span class="flex items-center gap-1 font-semibold text-primary">
+<span class="material-symbols-outlined text-[15px]">terminal</span>
+            NMVS Console
+          </span>
+<span class="text-outline">/</span>
+<span class="text-on-surface font-semibold">Device Fleet Management</span>
+<span class="text-outline">/</span>
+<span class="text-tertiary font-code-sm text-code-sm px-2 py-0.5 rounded-full bg-tertiary-container/15 font-medium">Auto-Sync: 30s</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-md pt-1">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-primary-container shadow-[0_0_8px_rgba(34,199,214,0.7)]"></div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Active Fleet Inventory</h1>
+</div>
+<!-- Quick Status Metric Chips -->
+<div class="flex flex-wrap items-center gap-2 pl-0 xl:pl-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest shadow-sm font-label-md text-label-md text-on-surface">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+              Total <strong class="text-on-surface font-semibold" id="fleet-chip-total">0</strong>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest shadow-sm font-label-md text-label-md text-on-surface">
+<span class="w-2 h-2 rounded-full bg-tertiary-container shadow-[0_0_6px_rgba(62,200,193,0.8)]"></span>
+              Online <strong class="text-tertiary font-semibold" id="fleet-chip-online">0</strong>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest shadow-sm font-label-md text-label-md text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+              Degraded <strong class="text-secondary font-semibold" id="fleet-chip-degraded">0</strong>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest shadow-sm font-label-md text-label-md text-on-surface">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+              Offline <strong class="text-error font-semibold" id="fleet-chip-offline">0</strong>
+</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm w-full xl:w-auto justify-start xl:justify-end">
+<button class="flex items-center gap-2 px-space-md py-2 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-variant transition-all shadow-sm font-label-md text-label-md font-medium active:scale-95" id="syncFleetBtn">
+<span class="material-symbols-outlined text-[18px] text-primary" id="syncIcon">sync</span>
+<span>Sync Fleet</span>
+<span class="text-on-surface-variant font-code-sm text-code-sm opacity-80" id="syncTimeLabel">(synced)</span>
+</button>
+<div class="relative group">
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-variant transition-all shadow-sm font-label-md text-label-md font-medium" onclick="seedFleetNow()">
+<span class="material-symbols-outlined text-[18px] text-secondary">playlist_add</span>
+<span>Seed Demo Fleet</span>
+</button>
+</div>
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-variant transition-all shadow-sm font-label-md text-label-md font-medium" id="exportFleetCsvBtn" onclick="exportFleetCsv()">
+<span class="material-symbols-outlined text-[18px] text-outline">file_download</span>
+<span>Export CSV</span>
+</button>
+<button class="flex items-center gap-2 px-space-lg py-2 rounded-xl bg-primary-container text-on-secondary-container hover:bg-primary-container/90 transition-all font-title-sm text-title-sm font-semibold shadow-[0_4px_14px_rgba(34,199,214,0.4)] active:scale-95" onclick="document.getElementById('addDeviceModal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Add Device</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Filter, Search & Segmented Toolbar -->
+<section class="w-full px-gutter-desktop pb-space-sm">
+<div class="w-full bg-surface-container-low rounded-2xl shadow-[8px_12px_24px_-4px_rgba(32,45,75,0.14),-4px_-4px_12px_0px_rgba(255,255,255,0.65)] p-space-md flex flex-col gap-space-md">
+<!-- Primary Search and Quick Filters Row -->
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center gap-space-md">
+<!-- Search Well -->
+<div class="flex-1 relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-[20px] text-outline">search</span>
+<input class="w-full pl-11 pr-16 py-2.5 rounded-xl bg-surface-container shadow-[inset_2px_2px_4px_rgba(20,30,50,0.12),inset_-2px_-2px_4px_rgba(255,255,255,0.5)] text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary-container font-body-md text-body-md" placeholder="Search by Hostname, IPv4/IPv6, MAC address, serial or VLAN..." type="text"/>
+<div class="absolute right-3 flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-code-sm text-code-sm shadow-sm select-none">
+<span>⌘</span><span>K</span>
+</div>
+</div>
+<!-- Filter Selectors -->
+<div class="flex flex-wrap items-center gap-2">
+<!-- Device Type Select -->
+<div class="relative">
+<select class="appearance-none pl-3.5 pr-8 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-body-sm text-body-sm font-medium shadow-sm cursor-pointer hover:bg-surface-container focus:outline-none focus:ring-1 focus:ring-primary-container">
+<option>Device Type: All (Routers, Switches, NGFW, APs)</option>
+<option>Core Routers (14)</option>
+<option>Access Switches (68)</option>
+<option>Firewalls &amp; Security (18)</option>
+<option>Wireless Access Points (34)</option>
+<option>Storage &amp; SAN/NAS (8)</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-2.5 text-[18px] text-outline">expand_more</span>
+</div>
+<!-- Status Select -->
+<div class="relative">
+<select class="appearance-none pl-3.5 pr-8 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-body-sm text-body-sm font-medium shadow-sm cursor-pointer hover:bg-surface-container focus:outline-none focus:ring-1 focus:ring-primary-container">
+<option>Status: All States</option>
+<option>Online (128)</option>
+<option>Degraded (9)</option>
+<option>Offline (5)</option>
+<option>Maintenance Window</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-2.5 text-[18px] text-outline">expand_more</span>
+</div>
+<!-- Subnet / VLAN Select -->
+<div class="relative">
+<select class="appearance-none pl-3.5 pr-8 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-body-sm text-body-sm font-medium shadow-sm cursor-pointer hover:bg-surface-container focus:outline-none focus:ring-1 focus:ring-primary-container">
+<option>Subnet: 10.240.0.0/16 (All Blocks)</option>
+<option>10.240.0.0/24 - Core Backbone</option>
+<option>10.240.10.0/24 - Operations Floor 1</option>
+<option>10.240.20.0/24 - Engineering Floor 2</option>
+<option>10.240.30.0/24 - Enterprise Wi-Fi 6E</option>
+<option>10.240.80.0/24 - Secure DMZ Cluster</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-2.5 text-[18px] text-outline">expand_more</span>
+</div>
+<!-- Vendor/OS -->
+<div class="relative">
+<select class="appearance-none pl-3.5 pr-8 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-body-sm text-body-sm font-medium shadow-sm cursor-pointer hover:bg-surface-container focus:outline-none focus:ring-1 focus:ring-primary-container">
+<option>Vendor: All OS Versions</option>
+<option>Cisco Systems (IOS-XE)</option>
+<option>Juniper Networks (Junos OS)</option>
+<option>Palo Alto Networks (PAN-OS)</option>
+<option>Aruba Networks (ArubaOS-CX)</option>
+<option>Pure Storage (Purity//FB)</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-2.5 text-[18px] text-outline">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Applied Filters & Active Chips -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-1 border-t border-surface-container/60">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Filters:</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm font-medium">
+<span>Cluster:</span>
+<strong class="text-primary font-semibold">East-DC-Alpha</strong>
+<button class="hover:text-error transition-colors"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm font-medium">
+<span>Health:</span>
+<strong class="text-tertiary font-semibold">All Active Probes</strong>
+<button class="hover:text-error transition-colors"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm font-medium">
+<span>SNMP Engine:</span>
+<strong class="text-secondary font-semibold">v3 Enabled</strong>
+<button class="hover:text-error transition-colors"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<button class="text-primary hover:text-on-primary-container font-label-md text-label-md font-semibold underline underline-offset-2 ml-1">Reset All</button>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Showing <strong class="text-on-surface">142</strong> nodes</span>
+<div class="flex items-center bg-surface-container rounded-lg p-0.5 shadow-inner">
+<button class="px-2 py-1 rounded-md bg-surface-container-lowest text-on-surface font-body-sm text-body-sm shadow-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">view_list</span>
+              Table
+            </button>
+<button class="px-2 py-1 rounded-md text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">grid_view</span>
+              Grid
+            </button>
+<button class="px-2 py-1 rounded-md text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">hub</span>
+              Graph
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Workstation View: Inventory Table + Live Quick Inspection Dock -->
+<section class="w-full px-gutter-desktop py-space-sm pb-space-2xl">
+<div class="grid grid-cols-1 2xl:grid-cols-12 gap-space-lg items-start">
+<!-- Primary Data Grid Table (8 or 9 cols on 2xl) -->
+<div class="w-full 2xl:col-span-9 bg-surface-container-low rounded-2xl shadow-[8px_12px_24px_-4px_rgba(32,45,75,0.18),-4px_-4px_12px_0px_rgba(255,255,255,0.7)] overflow-hidden flex flex-col">
+<!-- Table Frame -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container/80 text-on-surface-variant font-label-md text-label-md uppercase tracking-wider select-none">
+<th class="py-3.5 pl-4 pr-2 w-10">
+<input class="rounded w-4 h-4 accent-primary cursor-pointer text-primary" type="checkbox"/>
+</th>
+<th class="py-3.5 px-3">
+<div class="flex items-center gap-1 cursor-pointer hover:text-on-surface">
+<span>Device &amp; Hostname</span>
+<span class="material-symbols-outlined text-[16px] text-primary">arrow_drop_down</span>
+</div>
+</th>
+<th class="py-3.5 px-3">
+<div class="flex items-center gap-1 cursor-pointer hover:text-on-surface">
+<span>IP Address / CIDR</span>
+<span class="material-symbols-outlined text-[14px] text-outline">unfold_more</span>
+</div>
+</th>
+<th class="py-3.5 px-3">Hardware &amp; Model</th>
+<th class="py-3.5 px-3">
+<div class="flex items-center gap-1 cursor-pointer hover:text-on-surface">
+<span>Telemetry Status</span>
+<span class="material-symbols-outlined text-[14px] text-outline">unfold_more</span>
+</div>
+</th>
+<th class="py-3.5 px-3">
+<div class="flex items-center gap-1 cursor-pointer hover:text-on-surface">
+<span>RTT Latency</span>
+<span class="material-symbols-outlined text-[14px] text-outline">unfold_more</span>
+</div>
+</th>
+<th class="py-3.5 px-3">Uptime &amp; Last Ping</th>
+<th class="py-3.5 pr-4 pl-2 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container/60 font-body-sm text-body-sm text-on-surface" id="device-table-body">
+<!-- Row 1: Core Router 01 (Healthy / Selected Active) -->
+<tr class="bg-surface-container-highest/40 hover:bg-surface-container transition-colors group cursor-pointer" onclick="selectDeviceRow('CR-01-DC1', '10.240.0.1', 'Juniper MX480', 'Core Router', '0.24ms', '99.99%', '4s ago', 'Online')">
+<td class="py-3 pl-4 pr-2" onclick="event.stopPropagation()">
+<input checked="" class="rounded w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-[#17233F] text-primary-container flex items-center justify-center font-bold text-xs shadow-inner">
+<span class="material-symbols-outlined text-[18px]">router</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors flex items-center gap-1.5">
+                        CR-01-DC1
+                        <span class="material-symbols-outlined text-primary text-[14px]" title="Priority Node">verified</span>
+</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant font-mono">cr-01.alpha.us-east.nmvs.net</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3" onclick="event.stopPropagation()">
+<div class="flex items-center gap-2 group/ip">
+<span class="font-code-sm text-code-sm font-semibold bg-surface-container px-2 py-0.5 rounded text-on-surface font-mono">10.240.0.1/24</span>
+<button class="opacity-0 group-hover/ip:opacity-100 p-1 hover:text-primary transition-opacity" title="Copy IP">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-outline">VLAN 100 • Core Backbone</span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Juniper MX480</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Junos OS 21.4R3-S5</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-container/15 text-on-tertiary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary-container shadow-[0_0_6px_rgba(62,200,193,0.9)] animate-pulse"></span>
+                    ONLINE
+                  </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm font-bold text-tertiary">0.24 ms</span>
+<!-- Inline Sparkline SVG RTT -->
+<svg class="w-14 h-4 text-tertiary" fill="none" viewbox="0 0 56 16">
+<path d="M0 12 L10 11 L20 13 L30 6 L40 10 L50 8 L56 7" stroke="currentColor" stroke-linecap="round" stroke-width="1.75"></path>
+</svg>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">284d 14h 22m</span>
+<span class="font-label-sm text-label-sm text-tertiary">Ping: 4s ago</span>
+</div>
+</td>
+<td class="py-3 pr-4 pl-2 text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="SSH Terminal Quick-Launch">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Inspect Telemetry">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Edit Device Attributes">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/40 transition-colors" title="De-register Node">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Access Switch Floor 1 (Healthy) -->
+<tr class="hover:bg-surface-container transition-colors group cursor-pointer" onclick="selectDeviceRow('SW-ACC-F1-01', '10.240.10.15', 'Cisco Catalyst 9500-48Y4C', 'Access Switch', '1.18ms', '99.98%', '8s ago', 'Online')">
+<td class="py-3 pl-4 pr-2" onclick="event.stopPropagation()">
+<input class="rounded w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-secondary flex items-center justify-center font-bold text-xs shadow-inner">
+<span class="material-symbols-outlined text-[18px]">lan</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors">SW-ACC-F1-01</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant font-mono">sw-acc-f1.alpha.us-east.nmvs.net</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3" onclick="event.stopPropagation()">
+<div class="flex items-center gap-2 group/ip">
+<span class="font-code-sm text-code-sm font-semibold bg-surface-container px-2 py-0.5 rounded text-on-surface font-mono">10.240.10.15/24</span>
+<button class="opacity-0 group-hover/ip:opacity-100 p-1 hover:text-primary transition-opacity" title="Copy IP">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-outline">VLAN 210 • Floor 1 Ops</span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Cisco Catalyst 9500</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">IOS-XE 17.09.03a</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-container/15 text-on-tertiary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary-container shadow-[0_0_6px_rgba(62,200,193,0.9)] animate-pulse"></span>
+                    ONLINE
+                  </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm font-bold text-tertiary">1.18 ms</span>
+<svg class="w-14 h-4 text-tertiary" fill="none" viewbox="0 0 56 16">
+<path d="M0 10 L12 9 L22 8 L32 11 L42 9 L56 10" stroke="currentColor" stroke-linecap="round" stroke-width="1.75"></path>
+</svg>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">112d 06h 44m</span>
+<span class="font-label-sm text-label-sm text-tertiary">Ping: 8s ago</span>
+</div>
+</td>
+<td class="py-3 pr-4 pl-2 text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/40 transition-colors">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: NextGen Firewall (Degraded State - High Latency) -->
+<tr class="hover:bg-surface-container transition-colors group cursor-pointer" onclick="selectDeviceRow('FW-BORDER-01', '10.240.80.1', 'Palo Alto PA-5250', 'Next-Gen Firewall', '24.8ms', '98.42%', '12s ago', 'Degraded')">
+<td class="py-3 pl-4 pr-2" onclick="event.stopPropagation()">
+<input class="rounded w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center font-bold text-xs shadow-inner">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors">FW-BORDER-01</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant font-mono">fw-border-01.dmz.nmvs.net</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3" onclick="event.stopPropagation()">
+<div class="flex items-center gap-2 group/ip">
+<span class="font-code-sm text-code-sm font-semibold bg-surface-container px-2 py-0.5 rounded text-on-surface font-mono">10.240.80.1/24</span>
+<button class="opacity-0 group-hover/ip:opacity-100 p-1 hover:text-primary transition-opacity" title="Copy IP">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-outline">VLAN 500 • DMZ Edge</span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Palo Alto PA-5250</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PAN-OS 11.0.2</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/25 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+                    DEGRADED
+                  </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm font-bold text-secondary">24.8 ms</span>
+<!-- Jitter bump sparkline -->
+<svg class="w-14 h-4 text-secondary" fill="none" viewbox="0 0 56 16">
+<path d="M0 13 L12 11 L20 14 L28 2 L38 12 L48 4 L56 13" stroke="currentColor" stroke-linecap="round" stroke-width="1.75"></path>
+</svg>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">45d 02h 19m</span>
+<span class="font-label-sm text-label-sm text-secondary">Jitter Spike: 24.8ms</span>
+</div>
+</td>
+<td class="py-3 pr-4 pl-2 text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/40 transition-colors">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Wireless AP 635 (Healthy) -->
+<tr class="hover:bg-surface-container transition-colors group cursor-pointer" onclick="selectDeviceRow('AP-WEST-ATRIUM-04', '10.240.30.82', 'Aruba AP-635 Campus AP', 'Wireless AP', '2.40ms', '99.95%', '14s ago', 'Online')">
+<td class="py-3 pl-4 pr-2" onclick="event.stopPropagation()">
+<input class="rounded w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-tertiary flex items-center justify-center font-bold text-xs shadow-inner">
+<span class="material-symbols-outlined text-[18px]">wifi</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors">AP-WEST-ATRIUM-04</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant font-mono">ap-635-w04.corp.wifi</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3" onclick="event.stopPropagation()">
+<div class="flex items-center gap-2 group/ip">
+<span class="font-code-sm text-code-sm font-semibold bg-surface-container px-2 py-0.5 rounded text-on-surface font-mono">10.240.30.82/24</span>
+<button class="opacity-0 group-hover/ip:opacity-100 p-1 hover:text-primary transition-opacity" title="Copy IP">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-outline">VLAN 330 • Wi-Fi 6E Mesh</span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Aruba AP-635</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ArubaOS 10.4.1</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-container/15 text-on-tertiary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary-container shadow-[0_0_6px_rgba(62,200,193,0.9)] animate-pulse"></span>
+                    ONLINE
+                  </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm font-bold text-tertiary">2.40 ms</span>
+<svg class="w-14 h-4 text-tertiary" fill="none" viewbox="0 0 56 16">
+<path d="M0 8 L12 8 L24 9 L36 7 L48 8 L56 8" stroke="currentColor" stroke-linecap="round" stroke-width="1.75"></path>
+</svg>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">63d 18h 12m</span>
+<span class="font-label-sm text-label-sm text-tertiary">Clients: 78 connected</span>
+</div>
+</td>
+<td class="py-3 pr-4 pl-2 text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/40 transition-colors">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Access Switch Floor 2 (Offline Alert) -->
+<tr class="bg-error-container/10 hover:bg-error-container/20 transition-colors group cursor-pointer" onclick="selectDeviceRow('SW-ACC-F2-04', '10.240.20.18', 'Cisco Catalyst 9300-48P', 'Access Switch', 'TIMEOUT', '91.20%', '3m ago', 'Offline')">
+<td class="py-3 pl-4 pr-2" onclick="event.stopPropagation()">
+<input class="rounded w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-error-container text-error flex items-center justify-center font-bold text-xs shadow-inner">
+<span class="material-symbols-outlined text-[18px]">power_off</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface group-hover:text-error transition-colors">SW-ACC-F2-04</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant font-mono">sw-acc-f2-04.corp.local</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3" onclick="event.stopPropagation()">
+<div class="flex items-center gap-2 group/ip">
+<span class="font-code-sm text-code-sm font-semibold bg-surface-container px-2 py-0.5 rounded text-on-surface font-mono">10.240.20.18/24</span>
+<button class="opacity-0 group-hover/ip:opacity-100 p-1 hover:text-primary transition-opacity" title="Copy IP">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-error font-medium">VLAN 220 • ICMP Unreachable</span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Cisco Catalyst 9300</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">IOS-XE 17.06.05</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+                    OFFLINE
+                  </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm font-bold text-error">Packet Drop 100%</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-medium text-error font-semibold">Down for 18m</span>
+<span class="font-label-sm text-label-sm text-outline">Last ping: 18m ago</span>
+</div>
+</td>
+<td class="py-3 pr-4 pl-2 text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Traceroute Diagnostics">
+<span class="material-symbols-outlined text-[18px]">route</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: SAN Array Pure FlashArray (Healthy) -->
+<tr class="hover:bg-surface-container transition-colors group cursor-pointer" onclick="selectDeviceRow('SAN-STORAGE-01', '10.240.50.12', 'Pure Storage FlashArray//X70', 'SAN / Block Storage', '0.45ms', '99.999%', '2s ago', 'Online')">
+<td class="py-3 pl-4 pr-2" onclick="event.stopPropagation()">
+<input class="rounded w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-primary flex items-center justify-center font-bold text-xs shadow-inner">
+<span class="material-symbols-outlined text-[18px]">dns</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors">SAN-STORAGE-01</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant font-mono">pure-fa01.storage.nmvs.net</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3" onclick="event.stopPropagation()">
+<div class="flex items-center gap-2 group/ip">
+<span class="font-code-sm text-code-sm font-semibold bg-surface-container px-2 py-0.5 rounded text-on-surface font-mono">10.240.50.12/24</span>
+<button class="opacity-0 group-hover/ip:opacity-100 p-1 hover:text-primary transition-opacity" title="Copy IP">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-outline">VLAN 500 • iSCSI Target</span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Pure FlashArray//X70</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Purity 6.4.8</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-container/15 text-on-tertiary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary-container shadow-[0_0_6px_rgba(62,200,193,0.9)] animate-pulse"></span>
+                    ONLINE
+                  </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm font-bold text-tertiary">0.45 ms</span>
+<svg class="w-14 h-4 text-tertiary" fill="none" viewbox="0 0 56 16">
+<path d="M0 11 L14 10 L28 11 L42 9 L56 10" stroke="currentColor" stroke-linecap="round" stroke-width="1.75"></path>
+</svg>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">412d 11h 05m</span>
+<span class="font-label-sm text-label-sm text-tertiary">IOPS: 142k • 0 errors</span>
+</div>
+</td>
+<td class="py-3 pr-4 pl-2 text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/40 transition-colors">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 7: Border Gateway Juniper (Degraded Queue Drop) -->
+<tr class="hover:bg-surface-container transition-colors group cursor-pointer" onclick="selectDeviceRow('GW-INTERNET-B', '198.51.100.254', 'Juniper SRX1500', 'Gateway Router', '8.92ms', '99.04%', '5s ago', 'Degraded')">
+<td class="py-3 pl-4 pr-2" onclick="event.stopPropagation()">
+<input class="rounded w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-secondary flex items-center justify-center font-bold text-xs shadow-inner">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors">GW-INTERNET-B</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant font-mono">gw-b.transit.as64512.net</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3" onclick="event.stopPropagation()">
+<div class="flex items-center gap-2 group/ip">
+<span class="font-code-sm text-code-sm font-semibold bg-surface-container px-2 py-0.5 rounded text-on-surface font-mono">198.51.100.254/30</span>
+<button class="opacity-0 group-hover/ip:opacity-100 p-1 hover:text-primary transition-opacity" title="Copy IP">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-outline">BGP Peer #3 • Cogent Fiber</span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Juniper SRX1500</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Junos OS 22.2R1</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/25 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                    DEGRADED
+                  </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm font-bold text-secondary">8.92 ms</span>
+<svg class="w-14 h-4 text-secondary" fill="none" viewbox="0 0 56 16">
+<path d="M0 10 L10 8 L22 14 L34 8 L46 12 L56 10" stroke="currentColor" stroke-linecap="round" stroke-width="1.75"></path>
+</svg>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">19d 04h 10m</span>
+<span class="font-label-sm text-label-sm text-secondary">BGP flap 2h ago</span>
+</div>
+</td>
+<td class="py-3 pr-4 pl-2 text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/40 transition-colors">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Density Control Footer -->
+<div class="w-full bg-surface-container/60 px-space-lg py-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-sm border-t border-surface-container">
+<div class="flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm">
+<span>Showing <strong class="text-on-surface font-semibold">1 – 7</strong> of <strong class="text-on-surface font-semibold">142</strong> devices</span>
+<div class="flex items-center gap-1.5 pl-2">
+<span class="font-label-sm text-label-sm">Per page:</span>
+<select class="bg-surface-container-lowest text-on-surface rounded-lg px-2 py-1 shadow-sm font-code-sm text-code-sm font-semibold focus:outline-none">
+<option selected="">10</option>
+<option>25</option>
+<option>50</option>
+<option>100</option>
+</select>
+</div>
+</div>
+<!-- Pagination Buttons -->
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary text-on-primary font-bold text-xs shadow-sm flex items-center justify-center">1</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-medium text-xs shadow-sm flex items-center justify-center">2</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-medium text-xs shadow-sm flex items-center justify-center">3</button>
+<span class="px-1 text-on-surface-variant">...</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-medium text-xs shadow-sm flex items-center justify-center">15</button>
+<button class="p-1.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container shadow-sm">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Inspection Drawer / Selected Telemetry Card (3 cols on 2xl) -->
+<div class="w-full 2xl:col-span-3 flex flex-col gap-space-md">
+<!-- Deep Navy Inspection Box (Elevation 2 Anchor) -->
+<div class="w-full bg-[#17233F] text-white rounded-2xl shadow-[0_16px_32px_-6px_rgba(17,24,39,0.40)] p-space-lg flex flex-col gap-space-md border border-white/10 relative overflow-hidden">
+<!-- Subtle Glow Accent -->
+<div class="absolute -top-12 -right-12 w-44 h-44 rounded-full bg-primary-container/20 blur-3xl pointer-events-none"></div>
+<!-- Header -->
+<div class="flex items-center justify-between border-b border-white/10 pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">monitor_heart</span>
+<span class="font-title-sm text-title-sm font-semibold tracking-tight">Live Node Inspector</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-container/20 text-tertiary-fixed font-code-sm text-code-sm font-semibold" id="inspectStatusBadge">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container shadow-[0_0_8px_rgba(62,200,193,0.9)] animate-pulse"></span>
+              LIVE ACTIVE
+            </span>
+</div>
+<!-- Selected Identity -->
+<div class="flex flex-col gap-1">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md font-bold text-white tracking-tight" id="inspectDeviceName">CR-01-DC1</span>
+<span class="font-code-sm text-code-sm font-bold text-primary-container bg-[#131C33] px-2 py-1 rounded" id="inspectLatency">0.24 ms RTT</span>
+</div>
+<span class="font-code-sm text-code-sm text-surface-variant font-mono" id="inspectIP">10.240.0.1 (VLAN 100)</span>
+<span class="font-body-sm text-body-sm text-surface-variant/80" id="inspectModel">Juniper MX480 • Junos 21.4R3-S5</span>
+</div>
+<!-- Port Utilization Mini Matrix -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-surface-variant uppercase tracking-wider">
+<span>Port Matrix (48x 100G)</span>
+<span class="text-primary-container font-mono">42/48 Linked</span>
+</div>
+<!-- Grid of Ports -->
+<div class="grid grid-cols-8 gap-1.5 p-2 rounded-xl bg-[#131C33] border border-white/5">
+<div class="h-3 rounded-sm bg-primary-container shadow-[0_0_4px_rgba(34,199,214,0.6)]" title="et-0/0/0 UP"></div>
+<div class="h-3 rounded-sm bg-primary-container shadow-[0_0_4px_rgba(34,199,214,0.6)]" title="et-0/0/1 UP"></div>
+<div class="h-3 rounded-sm bg-primary-container shadow-[0_0_4px_rgba(34,199,214,0.6)]" title="et-0/0/2 UP"></div>
+<div class="h-3 rounded-sm bg-primary-container shadow-[0_0_4px_rgba(34,199,214,0.6)]" title="et-0/0/3 UP"></div>
+<div class="h-3 rounded-sm bg-primary-container shadow-[0_0_4px_rgba(34,199,214,0.6)]" title="et-0/0/4 UP"></div>
+<div class="h-3 rounded-sm bg-secondary-container" title="et-0/0/5 High Rx"></div>
+<div class="h-3 rounded-sm bg-primary-container shadow-[0_0_4px_rgba(34,199,214,0.6)]" title="et-0/0/6 UP"></div>
+<div class="h-3 rounded-sm bg-primary-container shadow-[0_0_4px_rgba(34,199,214,0.6)]" title="et-0/0/7 UP"></div>
+<div class="h-3 rounded-sm bg-primary-container shadow-[0_0_4px_rgba(34,199,214,0.6)]" title="et-0/0/8 UP"></div>
+<div class="h-3 rounded-sm bg-primary-container shadow-[0_0_4px_rgba(34,199,214,0.6)]" title="et-0/0/9 UP"></div>
+<div class="h-3 rounded-sm bg-white/20" title="et-0/0/10 Disconnected"></div>
+<div class="h-3 rounded-sm bg-white/20" title="et-0/0/11 Disconnected"></div>
+<div class="h-3 rounded-sm bg-primary-container shadow-[0_0_4px_rgba(34,199,214,0.6)]" title="et-0/0/12 UP"></div>
+<div class="h-3 rounded-sm bg-primary-container shadow-[0_0_4px_rgba(34,199,214,0.6)]" title="et-0/0/13 UP"></div>
+<div class="h-3 rounded-sm bg-primary-container shadow-[0_0_4px_rgba(34,199,214,0.6)]" title="et-0/0/14 UP"></div>
+<div class="h-3 rounded-sm bg-primary-container shadow-[0_0_4px_rgba(34,199,214,0.6)]" title="et-0/0/15 UP"></div>
+</div>
+</div>
+<!-- Quick Telemetry Gauges -->
+<div class="grid grid-cols-2 gap-space-sm pt-1">
+<div class="p-3 rounded-xl bg-[#131C33] border border-white/5 flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-surface-variant">CPU Load (RE-0)</span>
+<span class="font-headline-md text-headline-md font-bold text-white">18.4%</span>
+<div class="w-full bg-white/10 h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-[18%]"></div>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-[#131C33] border border-white/5 flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-surface-variant">RAM Allocated</span>
+<span class="font-headline-md text-headline-md font-bold text-white">32.2 GB</span>
+<div class="w-full bg-white/10 h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary-container h-full rounded-full w-[46%]"></div>
+</div>
+</div>
+</div>
+<!-- Quick Action Buttons inside Inspector -->
+<div class="flex items-center gap-2 pt-2">
+<button class="flex-1 py-2 px-3 rounded-xl bg-primary-container text-on-secondary-container hover:bg-primary-container/90 transition-all font-title-sm text-title-sm font-semibold flex items-center justify-center gap-1.5 shadow-[0_0_12px_rgba(34,199,214,0.4)]">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>Web Console</span>
+</button>
+<button class="p-2 rounded-xl bg-[#202D4B] hover:bg-[#2b3c64] text-white border border-white/10 transition-colors" title="Trigger Instant SNMP Probe">
+<span class="material-symbols-outlined text-[18px]">sensors</span>
+</button>
+<button class="p-2 rounded-xl bg-[#202D4B] hover:bg-[#2b3c64] text-white border border-white/10 transition-colors" title="Download Diagnostics Dump">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+<!-- SNMP & LLDP Auto-Discovery Info Banner -->
+<div class="w-full bg-surface-container-low rounded-2xl shadow-[8px_12px_24px_-4px_rgba(32,45,75,0.14),-4px_-4px_12px_0px_rgba(255,255,255,0.65)] p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-2 text-primary font-title-sm text-title-sm font-semibold">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+<span>FastAPI Discovery Probe</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Automatic background worker correlates LLDP neighbors every 60s. Newly registered devices inherit topology tags without manual interface mapping.
+          </p>
+<div class="flex items-center justify-between pt-1 border-t border-surface-container font-code-sm text-code-sm text-on-surface">
+<span>FastAPI Pool: <strong class="text-tertiary font-semibold">Healthy</strong></span>
+<span>Worker Queue: <strong class="text-on-surface font-semibold">0 pending</strong></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Add Device Modal (Dialog with crisp glass backdrop, defaulting hidden unless opened or triggered) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#0a1122]/60 backdrop-blur-md transition-all" id="addDeviceModal">
+<div class="w-full max-w-xl bg-surface-container-low rounded-2xl shadow-[0_24px_48px_-12px_rgba(15,23,42,0.45),0_0_0_1px_rgba(255,255,255,0.4)] overflow-hidden flex flex-col transform transition-all animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="bg-[#17233F] text-white p-space-lg flex items-start justify-between border-b border-white/10">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary/20 text-primary-container flex items-center justify-center shadow-[0_0_12px_rgba(34,199,214,0.45)]">
+<span class="material-symbols-outlined text-[24px]">add_to_queue</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md font-bold text-white tracking-tight">Add New Monitored Device</h2>
+<p class="font-body-sm text-body-sm text-surface-variant/90 leading-snug pt-0.5">
+              FastAPI backend will automatically resolve device type, SNMP discovery, and LLDP neighbor mapping upon registration.
+            </p>
+</div>
+</div>
+<button class="p-1 rounded-lg text-surface-variant hover:text-white hover:bg-white/10 transition-colors" onclick="document.getElementById('addDeviceModal').classList.add('hidden')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body Form (STRICTLY asking only for Device Name and IP Address as required) -->
+<form class="p-space-lg flex flex-col gap-space-lg" id="addDeviceForm" onsubmit="event.preventDefault(); submitAddDevice();">
+<!-- Field 1: Device Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm font-semibold text-on-surface flex items-center justify-between">
+<span>Device Name / Host Identifier <span class="text-error">*</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-normal">e.g. SW-Access-Floor3-East</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-[20px] text-outline">badge</span>
+<input class="w-full pl-11 pr-4 py-2.5 rounded-xl bg-surface-container text-on-surface placeholder:text-outline shadow-[inset_2px_2px_4px_rgba(20,30,50,0.12),inset_-2px_-2px_4px_rgba(255,255,255,0.5)] focus:outline-none focus:ring-2 focus:ring-primary-container font-body-md text-body-md" id="inputDeviceName" placeholder="SW-Access-Floor3-East" required="" type="text"/>
+</div>
+</div>
+<!-- Field 2: IP Address -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm font-semibold text-on-surface flex items-center justify-between">
+<span>IP Address (IPv4 or IPv6) <span class="text-error">*</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-normal">Valid routing address</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-[20px] text-outline">dns</span>
+<input class="w-full pl-11 pr-4 py-2.5 rounded-xl bg-surface-container text-on-surface placeholder:text-outline shadow-[inset_2px_2px_4px_rgba(20,30,50,0.12),inset_-2px_-2px_4px_rgba(255,255,255,0.5)] focus:outline-none focus:ring-2 focus:ring-primary-container font-code-sm text-code-sm font-mono" id="inputIPAddress" pattern="^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$|^([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}$" placeholder="10.240.10.25" required="" type="text"/>
+</div>
+</div>
+<!-- Explanatory System Note (As per design brief requirement) -->
+<div class="p-3 rounded-xl bg-surface-container flex items-start gap-3">
+<span class="material-symbols-outlined text-[20px] text-primary shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong>System Automated:</strong> Device ID, hardware classification, and initial ping status are managed automatically by the FastAPI worker probe once the node is queued.
+          </p>
+</div>
+<!-- Optional Advanced Accordion (SNMPv3 credentials) -->
+<div class="rounded-xl bg-surface-container/60 overflow-hidden">
+<button class="w-full px-4 py-2.5 flex items-center justify-between text-left font-body-sm text-body-sm font-semibold text-on-surface hover:bg-surface-container transition-colors" onclick="toggleAdvancedSNMP()" type="button">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">tune</span>
+              SNMPv3 Community &amp; Credentials (Optional)
+            </span>
+<span class="material-symbols-outlined text-[18px] text-outline transition-transform" id="accordionChevron">expand_more</span>
+</button>
+<div class="hidden px-4 pb-4 pt-2 flex flex-col gap-3" id="advancedSNMPContent">
+<div class="grid grid-cols-2 gap-3">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium">SNMP User / SecName</label>
+<input class="w-full px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface text-xs focus:ring-1 focus:ring-primary-container focus:outline-none" placeholder="nmvs-probe-user" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium">Auth Protocol</label>
+<select class="w-full px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface text-xs focus:ring-1 focus:ring-primary-container focus:outline-none">
+<option>SHA-256 (Default)</option>
+<option>SHA-512</option>
+<option>MD5</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium">Privacy Passphrase / Key</label>
+<input class="w-full px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface text-xs focus:ring-1 focus:ring-primary-container focus:outline-none font-mono" placeholder="••••••••••••••••" type="password"/>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center justify-end gap-space-sm pt-2 border-t border-surface-container">
+<button class="px-space-lg py-2.5 rounded-xl bg-surface-container hover:bg-surface-variant text-on-surface transition-colors font-title-sm text-title-sm font-medium" onclick="document.getElementById('addDeviceModal').classList.add('hidden')" type="button">
+            Cancel
+          </button>
+<button class="px-space-xl py-2.5 rounded-xl bg-primary-container text-on-secondary-container hover:bg-primary-container/90 transition-all font-title-sm text-title-sm font-semibold flex items-center gap-2 shadow-[0_4px_16px_rgba(34,199,214,0.45)] active:scale-95" id="btnSubmitModal" type="submit">
+<span class="material-symbols-outlined text-[20px]" id="submitIcon">sensors</span>
+<span id="submitLabel">Register &amp; Probe Device</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Micro-interactions Script -->
+<script>
+    let fleetDevices = [];
+
+    function toggleAdvancedSNMP() {
+      const panel = document.getElementById('advancedSNMPContent');
+      const chevron = document.getElementById('accordionChevron');
+      if (panel.classList.contains('hidden')) {
+        panel.classList.remove('hidden');
+        chevron.classList.add('rotate-180');
+      } else {
+        panel.classList.add('hidden');
+        chevron.classList.remove('rotate-180');
+      }
+    }
+
+    function selectDeviceRow(name, ip, model, type, latency, uptime, ping, status) {
+      const nameEl = document.getElementById('inspectDeviceName');
+      if (nameEl) nameEl.innerText = name;
+      const ipEl = document.getElementById('inspectIP');
+      if (ipEl) ipEl.innerText = ip + " (Discovered)";
+      const modelEl = document.getElementById('inspectModel');
+      if (modelEl) modelEl.innerText = model || type || 'Network Node';
+      const latEl = document.getElementById('inspectLatency');
+      if (latEl) latEl.innerText = latency || '0.35ms';
+      
+      const badge = document.getElementById('inspectStatusBadge');
+      if (badge) {
+        if (status === 'Offline') {
+          badge.className = "inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-error font-code-sm text-code-sm font-semibold";
+          badge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-error"></span> UNREACHABLE';
+        } else if (status === 'Degraded') {
+          badge.className = "inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary-fixed font-code-sm text-code-sm font-semibold";
+          badge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span> DEGRADED';
+        } else {
+          badge.className = "inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-container/20 text-tertiary-fixed font-code-sm text-code-sm font-semibold";
+          badge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container shadow-[0_0_8px_rgba(62,200,193,0.9)] animate-pulse"></span> LIVE ACTIVE';
+        }
+      }
+    }
+
+    function getDeviceIcon(type = '') {
+      const t = type.toLowerCase();
+      if (t.includes('router') || t.includes('gateway')) return 'router';
+      if (t.includes('switch')) return 'hub';
+      if (t.includes('firewall') || t.includes('security')) return 'security';
+      if (t.includes('ap') || t.includes('wireless')) return 'wifi';
+      if (t.includes('storage') || t.includes('san') || t.includes('nas')) return 'dns';
+      if (t.includes('server') || t.includes('probe')) return 'dns';
+      return 'devices';
+    }
+
+    async function loadDevices(isManualSync = false) {
+      try {
+        const devices = await NMVS_API.getDevices();
+        fleetDevices = devices || [];
+
+        // Update Stat Chips
+        const total = fleetDevices.length;
+        const online = fleetDevices.filter(d => (d.status || '').toLowerCase() === 'online').length;
+        const offline = fleetDevices.filter(d => (d.status || '').toLowerCase() === 'offline').length;
+        const degraded = Math.max(0, total - online - offline);
+
+        const totalEl = document.getElementById('fleet-chip-total');
+        if (totalEl) totalEl.textContent = total;
+        const onlineEl = document.getElementById('fleet-chip-online');
+        if (onlineEl) onlineEl.textContent = online;
+        const degEl = document.getElementById('fleet-chip-degraded');
+        if (degEl) degEl.textContent = degraded;
+        const offEl = document.getElementById('fleet-chip-offline');
+        if (offEl) offEl.textContent = offline;
+
+        const tableBody = document.getElementById('device-table-body');
+        if (!tableBody) return;
+
+        if (total === 0) {
+          tableBody.innerHTML = `
+            <tr>
+              <td colspan="8" class="py-12 text-center">
+                <div class="flex flex-col items-center justify-center gap-3">
+                  <div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center text-primary shadow-inner">
+                    <span class="material-symbols-outlined text-[28px]">router</span>
+                  </div>
+                  <div class="font-title-sm text-base text-on-surface font-semibold">No Monitored Devices in Fleet</div>
+                  <p class="font-body-sm text-sm text-on-surface-variant max-w-md">
+                    FastAPI database currently has 0 registered devices. Click below to add an IP or quickly seed a sample network topology fleet.
+                  </p>
+                  <div class="flex items-center gap-3 mt-2">
+                    <button onclick="document.getElementById('addDeviceModal').classList.remove('hidden')" class="px-4 py-2 rounded-xl bg-primary-container text-on-secondary-container font-title-sm text-sm font-semibold shadow-md active:scale-95 transition-all">
+                      + Add New Device
+                    </button>
+                    <button onclick="seedFleetNow()" class="px-4 py-2 rounded-xl bg-[#202D4B] hover:bg-[#29395d] text-primary-container border border-primary-container/30 font-title-sm text-sm font-semibold shadow-md active:scale-95 transition-all">
+                      Populate Demo Fleet
+                    </button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          `;
+          return;
+        }
+
+        tableBody.innerHTML = fleetDevices.map((dev, idx) => {
+          const isOnline = (dev.status || '').toLowerCase() === 'online';
+          const isOff = (dev.status || '').toLowerCase() === 'offline';
+          const icon = getDeviceIcon(dev.device_type);
+
+          const statusBadge = isOff
+            ? `<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+                <span class="w-2 h-2 rounded-full bg-error"></span> OFFLINE
+              </span>`
+            : `<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-container/15 text-on-tertiary-container font-label-sm text-label-sm font-semibold">
+                <span class="w-2 h-2 rounded-full bg-tertiary-container shadow-[0_0_6px_rgba(62,200,193,0.9)] animate-pulse"></span> ONLINE
+              </span>`;
+
+          const latencyStr = isOff ? 'Timeout' : (0.2 + (idx * 0.12)).toFixed(2) + ' ms';
+          const timeStr = dev.last_seen || (dev.updated_at ? new Date(dev.updated_at).toLocaleTimeString() : 'Recently');
+
+          return `
+            <tr class="hover:bg-surface-container transition-colors group cursor-pointer" onclick="selectDeviceRow('${dev.name}', '${dev.ip}', '${dev.device_type}', '${dev.device_type}', '${latencyStr}', '99.9%', '${timeStr}', '${dev.status || 'Online'}')">
+              <td class="py-3 pl-4 pr-2" onclick="event.stopPropagation()">
+                <input class="rounded w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+              </td>
+              <td class="py-3 px-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-[#17233F] text-primary-container flex items-center justify-center font-bold text-xs shadow-inner">
+                    <span class="material-symbols-outlined text-[18px]">${icon}</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors flex items-center gap-1.5">
+                      ${dev.name}
+                      <span class="material-symbols-outlined text-primary text-[14px]">verified</span>
+                    </span>
+                    <span class="font-code-sm text-code-sm text-on-surface-variant font-mono">${dev.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}.local</span>
+                  </div>
+                </div>
+              </td>
+              <td class="py-3 px-3" onclick="event.stopPropagation()">
+                <div class="flex items-center gap-2 group/ip">
+                  <span class="font-code-sm text-code-sm font-semibold bg-surface-container px-2 py-0.5 rounded text-on-surface font-mono">${dev.ip}</span>
+                  <button class="opacity-0 group-hover/ip:opacity-100 p-1 hover:text-primary transition-opacity" title="Copy IP" onclick="navigator.clipboard.writeText('${dev.ip}'); NMVS_API.showToast('Copied ${dev.ip}', 'info');">
+                    <span class="material-symbols-outlined text-[15px]">content_copy</span>
+                  </button>
+                </div>
+                <span class="font-label-sm text-label-sm text-outline">SNMP &amp; ICMP Monitored</span>
+              </td>
+              <td class="py-3 px-3">
+                <div class="flex flex-col">
+                  <span class="font-medium text-on-surface">${dev.device_type || 'Unknown'}</span>
+                  <span class="font-label-sm text-label-sm text-on-surface-variant">Discovered Role</span>
+                </div>
+              </td>
+              <td class="py-3 px-3">
+                ${statusBadge}
+              </td>
+              <td class="py-3 px-3">
+                <span class="font-code-sm text-code-sm font-semibold text-on-surface">${latencyStr}</span>
+              </td>
+              <td class="py-3 px-3">
+                <div class="flex flex-col">
+                  <span class="font-medium text-on-surface">ID: #${dev.id}</span>
+                  <span class="font-label-sm text-label-sm text-outline">${timeStr}</span>
+                </div>
+              </td>
+              <td class="py-3 pr-4 pl-2 text-right" onclick="event.stopPropagation()">
+                <div class="flex items-center justify-end gap-1">
+                  <button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Instant Ping Probe" onclick="probeDevice('${dev.ip}')">
+                    <span class="material-symbols-outlined text-[18px]">sensors</span>
+                  </button>
+                  <button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Re-detect Device Type" onclick="redetectDevice(${dev.id})">
+                    <span class="material-symbols-outlined text-[18px]">refresh</span>
+                  </button>
+                  <button class="p-1.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/30 transition-colors" title="Delete Device" onclick="deleteDeviceRow(${dev.id}, '${dev.name}')">
+                    <span class="material-symbols-outlined text-[18px]">delete</span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          `;
+        }).join('');
+
+        // Select first device
+        if (fleetDevices.length > 0) {
+          const first = fleetDevices[0];
+          selectDeviceRow(first.name, first.ip, first.device_type, first.device_type, '0.24ms', '99.9%', first.last_seen || 'Recently', first.status || 'Online');
+        }
+
+        if (isManualSync) {
+          NMVS_API.showToast(`Fleet synced (${fleetDevices.length} devices)`, 'info');
+        }
+      } catch (e) {
+        console.warn('Failed loading devices:', e);
+      }
+    }
+
+    async function submitAddDevice() {
+      const nameInput = document.getElementById('inputDeviceName');
+      const ipInput = document.getElementById('inputIPAddress');
+      const btn = document.getElementById('btnSubmitModal');
+      const icon = document.getElementById('submitIcon');
+      const label = document.getElementById('submitLabel');
+
+      const name = nameInput.value.trim();
+      const ip = ipInput.value.trim();
+
+      if (!name || !ip) {
+        NMVS_API.showToast('Device Name and IP Address are required', 'error');
+        return;
+      }
+
+      icon.innerText = "autorenew";
+      icon.classList.add("animate-spin");
+      label.innerText = "FastAPI Worker Probing...";
+      btn.disabled = true;
+
+      try {
+        const created = await NMVS_API.createDevice({ name, ip });
+        icon.classList.remove("animate-spin");
+        icon.innerText = "check_circle";
+        label.innerText = "Device Registered!";
+        btn.classList.remove("bg-primary-container");
+        btn.classList.add("bg-tertiary-container");
+
+        NMVS_API.showToast(`Device '${created.name}' (${created.ip}) registered as ${created.device_type}!`, 'success');
+
+        setTimeout(() => {
+          document.getElementById('addDeviceModal').classList.add('hidden');
+          btn.disabled = false;
+          icon.innerText = "sensors";
+          label.innerText = "Register & Probe Device";
+          btn.classList.add("bg-primary-container");
+          btn.classList.remove("bg-tertiary-container");
+          document.getElementById('addDeviceForm').reset();
+          loadDevices();
+        }, 900);
+      } catch (err) {
+        icon.classList.remove("animate-spin");
+        icon.innerText = "sensors";
+        label.innerText = "Register & Probe Device";
+        btn.disabled = false;
+        NMVS_API.showToast(`Registration failed: ${err.message}`, 'error');
+      }
+    }
+
+    async function probeDevice(ip) {
+      NMVS_API.showToast(`Probing ${ip}...`, 'info');
+      try {
+        const res = await NMVS_API.checkDevice(ip);
+        NMVS_API.showToast(`Ping ${ip}: Status is ${res.status || 'Checked'}`, 'success');
+        loadDevices();
+      } catch (e) {
+        NMVS_API.showToast(`Probe failed: ${e.message}`, 'error');
+      }
+    }
+
+    async function redetectDevice(id) {
+      NMVS_API.showToast(`Re-detecting hardware profile...`, 'info');
+      try {
+        const res = await NMVS_API.redetectDevice(id);
+        NMVS_API.showToast(`Device re-detected as: ${res.device_type}`, 'success');
+        loadDevices();
+      } catch (e) {
+        NMVS_API.showToast(`Re-detect failed: ${e.message}`, 'error');
+      }
+    }
+
+    async function deleteDeviceRow(id, name) {
+      if (!confirm(`Are you sure you want to remove device '${name}'?`)) return;
+      try {
+        await NMVS_API.deleteDevice(id);
+        NMVS_API.showToast(`Device '${name}' deleted successfully`, 'info');
+        loadDevices();
+      } catch (e) {
+        NMVS_API.showToast(`Delete failed: ${e.message}`, 'error');
+      }
+    }
+
+    async function seedFleetNow() {
+      NMVS_API.showToast('Seeding sample network fleet into PostgreSQL...', 'info');
+      try {
+        const seeded = await NMVS_API.seedSampleFleet();
+        NMVS_API.showToast(`Successfully seeded ${seeded.length} devices!`, 'success');
+        loadDevices();
+      } catch (e) {
+        NMVS_API.showToast(`Seeding error: ${e.message}`, 'error');
+      }
+    }
+
+    function exportFleetCsv() {
+      window.open(NMVS_API.getDevicesCsvUrl(), '_blank');
+      NMVS_API.showToast('Downloading Fleet Inventory CSV...', 'info');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadDevices();
+
+      document.getElementById('syncFleetBtn')?.addEventListener('click', function() {
+        const syncIcon = document.getElementById('syncIcon');
+        if (syncIcon) syncIcon.classList.add('animate-spin');
+        loadDevices(true).finally(() => {
+          setTimeout(() => {
+            if (syncIcon) syncIcon.classList.remove('animate-spin');
+          }, 800);
+        });
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-[#17233F] text-surface-variant border-t border-white/10"><div class="w-full px-gutter-desktop py-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm text-body-sm font-body-sm"><div class="flex items-center gap-space-sm"><span class="font-semibold text-white">NMVS</span><span>Enterprise Telemetry Engine v4.8.2</span></div><div class="flex items-center gap-space-lg text-label-md font-label-md"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-tertiary-container text-[16px]">check_circle</span>Engine Node Alpha (Healthy)</span><span>Latency: 12ms</span><span>Buffer: 0% Drop</span></div></div></footer></body></html>
